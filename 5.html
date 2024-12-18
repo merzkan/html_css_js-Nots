@@ -1,0 +1,37 @@
+<!--
+Adım 5: CSS Düzenleme (Layout)
+Web sayfalarında öğelerin yerleşimini kontrol etmenin birkaç yolu vardır.
+Bunlardan en yaygın olanları Flexbox ve Grid düzen sistemleridir.
+5.1 Flexbox:
+Flexbox, esnek ve düzenli bir yerleşim sağlaman için tasarlanmış bir CSS özellikler grubudur. 
+Özellikle tek boyutlu düzenler için idealdir (yani, ya satır ya da sütun).
+
+Flexbox ile Temel Kullanım:
+Flex Container (Esnek Kapsayıcı): Flexbox düzenini uygulamak istediğiniz öğeye 
+display: flex; özelliğini ekleyin.
+Flex Items (Esnek Öğeler): Kapsayıcı içinde bulunan öğeler otomatik olarak esnek öğeler haline gelir.
+
+Flexbox Özellikleri:
+justify-content: Ana eksen boyunca öğeleri hizalar (örneğin, sola, sağa, merkeze).
+align-items: Dikey eksen boyunca öğeleri hizalar.
+flex-direction: Öğelerin hangi yönde sıralanacağını belirler (satır veya sütun).
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="5.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item">Öğe 1</div>
+        <div class="flex-item">Öğe 2</div>
+        <div class="flex-item">Öğe 3</div>
+    </div>    
+</body>
+</html>

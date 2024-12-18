@@ -1,0 +1,54 @@
+<!--
+Adım 11: JavaScript ile Basit Etkileşimler Eklemek
+JavaScript, web sayfanıza dinamik özellikler eklemenizi sağlar. 
+Bu bölümde, JavaScript kullanarak kullanıcı etkileşimlerine nasıl yanıt verebileceğinizi öğreneceksiniz.
+
+11.1 Butona Tıklayınca Renk Değiştirme
+Bir butona tıklayınca arka plan rengini değiştirecek basit bir örnek yapalım.
+1.HTML’de bir buton ekleyin:
+for html:
+<button id="changeColorBtn">Renk Değiştir</button>
+
+2.JavaScript kodunu HTML dosyanızın <body> kısmına ekleyin veya ayrı bir .js dosyasında saklayın:
+for js:
+<script>
+    document.getElementById("changeColorBtn").onclick = function() {
+        document.body.style.backgroundColor = "#f39c12"; // Arka plan rengini turuncuya değiştirir
+    }
+</script>
+
+11.2 Fare ile Üzerine Gelince Yazı Rengini Değiştirme
+Bir başlık veya metin üzerine fareyle gelindiğinde rengini değiştirmek de interaktif bir özellik katar.
+1.HTML’de bir başlık ekleyin:
+for html:
+<h1 id="hoverText">Merhaba Dünya!</h1>
+2.JavaScript ile mouseover ve mouseout olaylarını kullanarak bu efekti oluşturun:
+<script>
+    const hoverText = document.getElementById("hoverText");
+
+    hoverText.onmouseover = function() {
+        hoverText.style.color = "red"; // Metin rengini kırmızıya değiştirir
+    };
+
+    hoverText.onmouseout = function() {
+        hoverText.style.color = "black"; // Metin rengini siyaha döndürür
+    };
+</script>
+
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="11.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="hoverText">Merhaba Dünya!</h1>
+    <button id="changeColorBtn">Renk Değiştir</button>
+    <script src="11.js"></script>
+
+</body>
+</html>

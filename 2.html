@@ -1,0 +1,47 @@
+<!--
+3.1 CSS'in Temel Kullanımı
+CSS’i HTML belgesine eklemenin üç yolu vardır:
+1.Satır İçi CSS (Inline CSS): HTML etiketinin içinde style özniteliği kullanarak.
+    <h1 style="color: blue;">Başlık</h1>
+
+2.İç CSS (Internal CSS): <style> etiketi kullanarak <head> bölümüne ekleyebilirsin.    
+    <head>
+    <style>
+        body {
+            background-color: lightgray;
+        }
+        h1 {
+            color: blue;
+        }
+    </style>
+    </head>
+3.Dış CSS (External CSS): CSS’i ayrı bir dosyaya yazarak HTML belgesine bağlayabilirsin. Bu en iyi yöntemdir çünkü stil dosyasını birden fazla HTML belgesinde kullanabilirsin.
+style.css adlı bir dosya oluştur ve içine CSS kodunu yaz:
+for css
+body {
+    background-color: lightgray;
+}
+h1 {
+    color: blue;
+}
+HTML dosyasına aşağıdaki kodu ekle:
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+-----------------------------------------------------------------------------------------
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="2.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>

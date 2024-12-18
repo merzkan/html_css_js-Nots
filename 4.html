@@ -1,0 +1,55 @@
+<!--
+Adım 4: CSS Kutusu Modeli (Box Model):
+İçerik (Content): Öğenin gerçek içeriği (metin, resim vb.).
+Dolgu (Padding): İçeriğin etrafındaki alan. İçerik ile kenarlık arasındaki boşluktur.
+Kenarlık (Border): Öğenin etrafında görünen çerçeve.
+Dış Boşluk (Margin): Öğenin dışındaki alan. Diğer öğelerle olan mesafeyi belirler.
++-----------------------+
+|        Margin         |  <-- Dış Boşluk
+|   +---------------+   |
+|   |    Border     |   |  <-- Kenarlık
+|   |  +---------+  |   |
+|   |  | Padding |  |   |  <-- Dolgu
+|   |  | +-----+ |  |   |
+|   |  | |Content|  |   |
+|   |  | +-----+ |  |   |
+|   |  +---------+  |   |
+|   +---------------+   |
++-----------------------+
+4.1 Kutuyu Kullanma
+Padding: Bir öğenin iç kısmındaki boşluğu ayarlamak için padding özelliğini kullanabilirsin.
+for css:
+p {
+    padding: 10px; /* Paragrafın içindeki metin ile kenarları arasında 10 piksel boşluk oluşturur. */
+}
+
+Border: Kenarlığın kalınlığını, stilini ve rengini ayarlamak için border özelliğini kullanabilirsin.
+for css:
+div {
+    border: 2px solid black; /* 2 piksel kalınlığında siyah bir kenarlık oluşturur. */
+}
+
+Margin: Bir öğenin dış kısmındaki boşluğu ayarlamak için margin özelliğini kullanabilirsin.
+for css:
+h1 {
+    margin: 20px; /* Başlık öğesinin çevresinde 20 piksel dış boşluk oluşturur. */
+}
+
+
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="4.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <h2>Bu bir kutu modelidir.</h2>
+        <p>Bu kutunun içinde içerik, dolgu, kenarlik ve diş boşluk bulunmaktadir.</p>
+    </div>
+</body>
+</html>

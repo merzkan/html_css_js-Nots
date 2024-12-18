@@ -1,0 +1,27 @@
+.kutu1{
+    background-image: url(/resimler/kus.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 300px;
+    height: 300px;
+    clear: white;
+    text-align: center;
+    border: 3px solid red;
+}
+body{
+    background-color: lightblue;
+}
+.kutu2{
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    border: 7px inset black;
+
+}
+
+.kutu3{
+    background-color: blueviolet;  
+    width: 50%;
+    height: 200px;
+    border-radius: 25px;
+}

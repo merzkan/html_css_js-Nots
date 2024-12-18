@@ -1,0 +1,12 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Üç eşit sütun oluşturur. */
+    gap: 10px; /* Satırlar ve sütunlar arasındaki boşluğu ayarlar. */
+    padding: 10px;
+    background-color: lightgray;
+}
+.grid-item {
+    background-color: lightblue;
+    padding: 20px;
+    border: 2px solid blue;
+}

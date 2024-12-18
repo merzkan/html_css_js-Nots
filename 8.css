@@ -1,0 +1,8 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example; /* Daha önce tanımlanan animasyonun adı */
+    animation-duration: 4s; /* 4 saniyede tamamlanır */
+    animation-iteration-count: infinite; /* Sonsuz döngü */
+}

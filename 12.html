@@ -1,0 +1,90 @@
+<!--
+Adım 12: Form Elemanlarını Özelleştirme
+Formlar kullanıcıdan bilgi toplamak için önemlidir. CSS kullanarak formun görünümünü iyileştirebiliriz.
+12.1 Form HTML Kodu
+Basit bir form oluşturalım:
+for html:
+<form id="contactForm">
+    <label for="name">Adınız:</label>
+    <input type="text" id="name" name="name">
+
+    <label for="email">E-posta:</label>
+    <input type="email" id="email" name="email">
+
+    <button type="submit">Gönder</button>
+</form>
+
+12.2 CSS ile Formun Görünümünü İyileştirme
+CSS dosyanıza aşağıdaki kodları ekleyerek formunuzu daha estetik hale getirin:
+for css:
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+Adım 13: JavaScript ile Form Doğrulama
+Form doğrulaması, kullanıcı tarafından girilen verilerin doğru ve beklenen formatta olmasını sağlar.
+JavaScript ile e-posta adresinin formatını kontrol edelim.
+HTML dosyasına JavaScript doğrulama kodunu ekleyin:
+for js:
+<script>
+    document.getElementById("contactForm").onsubmit = function(event) {
+        const emailInput = document.getElementById("email").value;
+
+        // E-posta formatını kontrol eden basit bir regex ifadesi
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (!emailRegex.test(emailInput)) {
+            alert("Lütfen geçerli bir e-posta adresi girin.");
+            event.preventDefault(); // Formun gönderilmesini engeller
+        }
+    }
+</script>
+
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="12.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="contactForm">
+        <label for="name">Adiniz:</label>
+        <input type="text" id="name" name="name">
+
+        <label for="email">E posta:</label>
+        <input type="email" id="email" name="email">
+
+        <button type="submit">Gönder</button>
+    </form>
+    <script src="12.js"></script>
+</body>
+</html>

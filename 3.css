@@ -1,0 +1,13 @@
+p {
+    color: blue; /* Tüm <p> etiketleri mavi renkte olacaktır. */
+}
+.highlight {
+    background-color: yellow; /* .highlight sınıfına sahip öğeler sarı arka plana sahip olacaktır. */
+}
+#main-title {
+    font-size: 50px; /* main-title ID'sine sahip öğe 50px yazı boyutuna sahip olacaktır. */
+}
+h1, h2, h3 {
+    color: red; /* Tüm <h1>, <h2> ve <h3> etiketleri kırmızı olacaktır. */
+}
+

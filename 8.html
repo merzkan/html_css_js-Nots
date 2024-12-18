@@ -1,0 +1,79 @@
+<!--
+Adım 7: CSS Medya Sorguları (Media Queries)
+Medya sorguları, web sayfalarının farklı ekran boyutlarına ve cihaz türlerine göre nasıl görüneceğini 
+belirlemek için kullanılır. Bu, responsive (duyarlı) tasarım oluşturmak için kritik bir bileşendir.
+
+7.1 Medya Sorgularının Temel Kullanımı
+Medya sorguları, CSS dosyanızda veya <style> etiketleri içinde kullanılabilir. Aşağıdaki temel yapı,
+bir medya sorgusunun nasıl kullanılacağını gösterir:
+for css:
+@media (koşul) {
+    /* Stil kuralları buraya gelecek */
+}
+
+/* Tüm cihazlar için genel stil */
+body {
+    font-size: 16px;
+}
+
+/* Ekran genişliği 768 piksel veya daha küçük olan cihazlar için */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Font boyutunu küçült */
+    }
+}
+
+/* Mobil cihazlar için stil */
+@media (max-width: 600px) {
+    .nav {
+        display: block; /* Menü blok halinde gösterilir */
+    }
+}
+
+/* Tabletler için stil */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .nav {
+        display: flex; /* Menü esnek düzenle gösterilir */
+    }
+}
+------------------------------------------------------------------------------------------
+Adım 8: CSS Animasyonları
+CSS animasyonları, öğelerin belirli bir süre boyunca değişmesini sağlamak için kullanılır. Bu, etkileşimli ve dinamik bir kullanıcı deneyimi yaratmak için önemlidir.
+
+8.1 Temel Animasyon Yapısı
+@keyframes: Animasyonun adım adım nasıl olacağını tanımlar.
+animation: Animasyonun nasıl uygulanacağını belirler.
+
+/* Animasyonun adımlarını tanımla */
+@keyframes example {
+    0% { background-color: red; }
+    50% { background-color: yellow; }
+    100% { background-color: green; }
+}
+
+/* Animasyonu uygula */
+div {
+    width: 100px;
+    height: 100px;
+    animation: example 4s infinite; /* 4 saniyede bir döngüyle tekrar eder */
+}
+
+8.2 Animasyon Özellikleri
+animation-name: Uygulamak istediğiniz animasyonun adını belirtir.
+animation-duration: Animasyonun ne kadar süreceğini belirtir.
+animation-timing-function: Animasyonun hızını ayarlar (ease, linear, ease-in, ease-out, ease-in-out).
+animation-delay: Animasyonun başlaması için bekleme süresini ayarlar.
+animation-iteration-count: Animasyonun kaç kez tekrarlanacağını belirtir (infinite, 1, 2, vb.).
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="8.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!--
+CSS Seçicileri Türleri
+1. Element Seçici (Tag Selector):
+Belirli bir HTML etiketini (elementini) seçer.
+for css:
+p {
+    color: blue; /* Tüm <p> etiketleri mavi renkte olacaktır. */
+}
+--------------------------------------------------------------------------------
+2. Sınıf Seçici (Class Selector):(.)
+Belirli bir sınıfa (class) sahip öğeleri seçer. Sınıf seçicileri . ile başlar.
+Bir öğeye birden fazla sınıf atayabilirsin, bu yüzden sınıf seçicileri çok yönlüdür.
+for css:
+.highlight {
+    background-color: yellow; /* .highlight sınıfına sahip öğeler sarı arka plana sahip olacaktır. */
+}
+for html:
+<p class="highlight">Bu metin sarı arka plana sahip.</p>
+--------------------------------------------------------------------------------
+3. ID Seçici (ID Selector):(#)
+Belirli bir ID’ye (id) sahip öğeleri seçer. ID seçicileri # ile başlar.
+Her ID, HTML belgesinde benzersiz olmalıdır, yani her öğe için yalnızca bir kez kullanılabilir.
+for css:
+#main-title {
+    font-size: 24px; /* main-title ID'sine sahip öğe 50px yazı boyutuna sahip olacaktır. */
+}
+for html:
+<h1 id="main-title">Ana Başlık</h1>
+--------------------------------------------------------------------------------
+4. Grup Seçici (Group Selector):
+Birden fazla seçiciyi virgülle ayırarak grup haline getirir. Tüm öğelere aynı stil uygulanır.
+for css:
+h1, h2, h3 {
+    color: red; /* Tüm <h1>, <h2> ve <h3> etiketleri kırmızı olacaktır. */
+}
+--------------------------------------------------------------------------------
+5. Alt Seçici (Descendant Selector):() divin altındaki p leri değiştirir.
+Bir öğenin içindeki belirli bir öğeyi seçer. Boşluk ile ayrılır.
+for css:
+div p {
+    color: green; /* <div> içindeki tüm <p> etiketleri yeşil olacaktır. */
+}
+--------------------------------------------------------------------------------
+6. Çocuk Seçici (Child Selector):
+Belirli bir öğenin doğrudan çocuklarını seçer. > sembolü ile gösterilir.
+for css:
+ul > li {
+    list-style-type: square; /* Sadece <ul> içindeki doğrudan <li> çocukları kare madde işareti alır. */
+}
+--------------------------------------------------------------------------------
+7. Öznitelik Seçici (Attribute Selector):
+Belirli bir özniteliğe sahip öğeleri seçer.
+for css:
+a[target="_blank"] {
+    color: orange; /* target="_blank" özniteliğine sahip tüm <a> etiketleri turuncu olacaktır. */
+}
+--------------------------------------------------------------------------------
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="3.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="main-title">Ana Başlik</h1>
+    <h1>bu bir</h1>
+    <h2>bu iki</h2>
+    <h3>bu üç</h3>
+    <p>Bu yazi mavidir.</p>
+    <p class="highlight">Bu metin sari arka plana sahip.</p>
+</body>
+</html

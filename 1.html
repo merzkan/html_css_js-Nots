@@ -1,0 +1,109 @@
+<!--
+1.1 HTML Yapısını Anla
+<!DOCTYPE html>: Bu, tarayıcılara belgenin bir HTML5 belgesi olduğunu söyler.
+<html> ve </html>: HTML dokümanının başlangıcını ve sonunu belirtir.
+<meta charset="UTF-8">: Bu etiket, belge içinde kullanılacak karakter setini belirler."UTF-8", dünya genelindeki birçok dilin karakterlerini destekleyen bir kodlamadır.
+<meta name="viewport" content="width=device-width, initial-scale=1.0">: Bu etiket, sayfanın mobil cihazlarda nasıl görüntüleneceğini belirler. width=device-width ifadesi, sayfanın genişliğinin cihazın ekran genişliğine eşit olmasını sağlar. initial-scale=1.0 ise sayfanın başlangıçta %100 ölçekle görüntülenmesini sağlar. Bu, responsive (duyarlı) tasarım için önemlidir.
+<head>: Sayfa başlığı, karakter seti, dış stiller ve diğer meta bilgileri içerir.
+<title>: Sayfanın başlığını ayarlar, tarayıcının sekmesinde görünür.
+<body>: Tüm görünen içerik (metin, resim, bağlantılar vs.) burada yer alır.
+
+1.2 Temel Etiketler
+Başlıklar: <h1> ile <h6> arasında değişen başlık etiketleri.
+Paragraflar: <p> etiketi ile paragraflar eklenir.
+Bağlantılar: <a href="URL">Link Metni</a> ile bağlantılar oluşturulur.
+Resimler: <img src="resim.jpg" alt="Açıklama"> ile sayfaya resim eklenir.
+Listeler: Sıralı liste için <ol>, sırasız liste için <ul>, liste elemanları için <li> kullanılır.
+
+--------------------------------------------------------------------------------------------------
+Adım 2: Temel HTML Etiketleri
+2.1 Başlık Etiketleri
+HTML’de başlıklar, sayfanın yapısını belirlemede önemli bir rol oynar. <h1> ile <h6> arasında başlık etiketleri bulunur:
+<h1>: En yüksek düzeyde başlık (en büyük)
+<h2>: İkinci düzey başlık
+<h3>: Üçüncü düzey başlık
+... devam eder, <h6> en düşük düzeyde başlıktır (en küçük).
+2.2 Paragraflar
+Metin paragraflarını belirtmek için <p> etiketi kullanılır. Her paragraf otomatik olarak alt boşlukla ayrılır.
+2.3 Bağlantılar
+Bağlantı oluşturmak için <a> etiketi kullanılır. href özniteliği, bağlantının gideceği URL'yi belirtir.
+2.4 Resimler
+Resim eklemek için <img> etiketi kullanılır. src özniteliği, resmin dosya yolunu belirtirken, alt özniteliği resim yüklenemediğinde gösterilecek metni tanımlar.
+2.5 Listeler
+Sırasız Liste: <ul> etiketi ile oluşturulur, liste elemanları <li> etiketi ile belirtilir.
+Sıralı Liste: <ol> etiketi ile oluşturulur, yine elemanlar <li> ile belirtilir.
+--------------------------------------------------------------------------------------------------
+1.<hr>   çizgi çekmek
+2.<br> boşluk bırakır
+3.<strong> kalın yazar
+4.<b> kalın
+5.<i> italik
+6.<mark> işaretleme yapar
+7.<center> yazıyı resmi ortalamak için kullanılır
+--------------------------------------------------------------------------------------------------
+Vs kısayolları:
+1.ALT + SHİFT + F = Kodları düzenlenmek
+2.CTRL + ALT + aşağı yukarı ok = imleci yukarı aşağı büyütüyor
+3.ALT + aşağı yukarı ok = Satırı kaydırmak için
+4.Yazıyı seçip CTRL+D aynı diğer yazılarıda seçiyor daha sonra değiştirme veya ekleme yapılabilir
+5.CTRL+SHİFT+K = Satır silmek
+6.CTRl+ENTER = Yeni satır
+7.FN + Pg Up(Pg Dn) = Satır başı-Satır sonu
+--------------------------------------------------------------------------------------------------
+TABLE oluşturma
+<table> tablo oluştur
+<table border="1"> sınırı oluşturur 1 büyüklügünde
+<tr> (table row ) satır oluştur
+<td> (table data) satırı bölmek için
+<th> (table header) tablo başlıgı
+<th colspan="3"> 3 kolon birleşir.
+<td rowspan="2"> 2 tane satırı birleştirir
+--------------------------------------------------------------------------------------------------
+inline ve block mantığı
+block = <p> <h1> <div>
+inline element(kullandıgı kadar yer kaplıyor) = <span>
+--------------------------------------------------------------------------------------------------
+DİV etiketi = <div> (block etiketidir)
+--------------------------------------------------------------------------------------------------
+Form etiketi form oluşturma
+--------------------------------------------------------------------------------------------------
+Video ekleme
+<video width="300" height="300" src="/dosya/video.mp4" type="video" controls></video>
+--------------------------------------------------------------------------------------------------
+iframe etkiketi
+<iframe width="400" height="400" src="" frameborder="0"></iframe>
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Benim Hakkımda</h1>
+    <h2>İlgi Alanlarım</h2>
+    <h3>Yeteneklerim</h3>
+    <p>Ben bir bilgisayar mühendisliği öğrencisiyim ve yazilim öğreniyorum.</p>
+    <a href="https://www.google.com" target="_blank">Google</a>
+    <hr>
+    <img src="resimler/kus.jpg" alt="Açiklayici Metin">
+    <h2>İlgi Alanlarım</h2>
+    <ul>
+        <li><b>Web Geliştirme</b></li>
+        <li><strong>Veri Bilimi</strong></li>
+        <br>
+        <li><i>Oyun Geliştirme</i></li>
+        <li><mark>Siber güvenlik</mark></li>
+    </ul>
+    <h2>Projelerim</h2>
+    <ol type="A">
+        <li>Portföy Sitesi</li>
+        <li>Not Alma Uygulaması</li>
+    </ol>
+</body>
+
+</html>
